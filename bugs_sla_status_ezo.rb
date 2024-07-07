@@ -7,7 +7,7 @@ require 'pry'
 $current_time = Time.now.utc
 
 def hotfix_rms
-  url = 'https://pm.7vals.com/issues.json?utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%3D&v%5Bstatus_id%5D%5B%5D=1&v%5Bstatus_id%5D%5B%5D=14&v%5Bstatus_id%5D%5B%5D=2&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=priority_id&op%5Bpriority_id%5D=%3D&v%5Bpriority_id%5D%5B%5D=6&v%5Bpriority_id%5D%5B%5D=7&f%5B%5D=cf_11&op%5Bcf_11%5D=%3D&v%5Bcf_11%5D%5B%5D=3&f%5B%5D=cf_21&op%5Bcf_21%5D=%21&v%5Bcf_21%5D%5B%5D=Specs+%2F+Design+Issue&f%5B%5D=&c%5B%5D=project&c%5B%5D=status&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=created_on&c%5B%5D=updated_on&c%5B%5D=author&c%5B%5D=cf_21&c%5B%5D=category&group_by=&t%5B%5D=&include=journals'
+  url = 'https://pm.7vals.com/issues.json?utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%3D&v%5Bstatus_id%5D%5B%5D=1&v%5Bstatus_id%5D%5B%5D=14&v%5Bstatus_id%5D%5B%5D=2&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=priority_id&op%5Bpriority_id%5D=%3D&v%5Bpriority_id%5D%5B%5D=6&v%5Bpriority_id%5D%5B%5D=7&f%5B%5D=cf_11&op%5Bcf_11%5D=%3D&v%5Bcf_11%5D%5B%5D=3&f%5B%5D=cf_21&op%5Bcf_21%5D=%21&v%5Bcf_21%5D%5B%5D=Specs+%2F+Design+Issue&f%5B%5D=&c%5B%5D=project&c%5B%5D=status&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=created_on&c%5B%5D=updated_on&c%5B%5D=author&c%5B%5D=cf_21&c%5B%5D=category&group_by=&t%5B%5D='
 
   uri = URI.parse(url)
   req = Net::HTTP::Get.new(uri.request_uri)
